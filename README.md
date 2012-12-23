@@ -1,0 +1,4 @@
+KoteSync
+========
+
+KPI educational project
