@@ -21,8 +21,8 @@ public class Main {
     Registrator.notifyICanHear(Registrator.CONTEXT_PATH, login, password, Registrator.getInternetAddress(), Integer.toString(SERVER_PORT));
   }
 
-  final static String machine1 = "mihDev2";
-  final static String machine2 = "mihDev1";
+  final static String machine1 = "device1";
+  final static String machine2 = "device2";
 
   public static void startServer() throws SocketException, Exception {
     // SERVER
