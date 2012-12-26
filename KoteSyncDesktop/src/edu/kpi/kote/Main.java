@@ -12,25 +12,24 @@ import edu.kpi.kote.server.ServerSide.ReceiverListener;
 
 /**
  * Entry point.
- * @author Pustovit Michael, pustovitm@gmail.com
  */
 public class Main {
 
-  public static final int SERVER_PORT = 8281;
+  public static final int SERVER_PORT = 8282;
 
   public static void notifyIAmHere(final String login, final String password) throws SocketException, Exception {
     Registrator.notifyICanHear(Registrator.CONTEXT_PATH, login, password, Registrator.getInternetAddress(), Integer.toString(SERVER_PORT));
   }
 
-  final static String machine1 = "mihDev1";
-  final static String machine2 = "mihDev2";
+  final static String machine1 = "mihDev2";
+  final static String machine2 = "mihDev1";
 
   public static void startServer() throws SocketException, Exception {
     // SERVER
     final String serverLogin = machine1;
     final String serverPassword = "pass";
 
-//    notifyIAmHere(serverLogin, serverPassword);
+    notifyIAmHere(serverLogin, serverPassword);
 
     final ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
 
@@ -43,9 +42,13 @@ public class Main {
       }
     };
 
-    while (true) {
-      final Socket clientSocket = serverSocket.accept();
-      ServerSide.processConnection(clientSocket, listener1);
+    try {
+      while (true) {
+        final Socket clientSocket = serverSocket.accept();
+        ServerSide.processConnection(clientSocket, listener1);
+      }
+    } finally {
+      serverSocket.close();
     }
   }
 

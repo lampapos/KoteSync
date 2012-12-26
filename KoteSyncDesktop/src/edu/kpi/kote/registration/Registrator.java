@@ -22,25 +22,6 @@ public class Registrator {
 //	public final static String CONTEXT_PATH = "http://localhost:8081";
 	public final static String CONTEXT_PATH = "http://kote-obormote.appspot.com";
 
-	public static void main(final String[] args) {
-		try {
-			final String contextPath = CONTEXT_PATH;
-
-			final String login = "login";
-			final String password = "password";
-			final String deviceToConnect = "deviceTo";
-
-			registerDevice(contextPath, login, password);
-
-			final String connectionInfo =
-				connectToDevice(contextPath, login, password, deviceToConnect);
-			System.out.println(connectionInfo);
-
-		} catch (final Exception ex) {
-			ex.printStackTrace();
-		}
-	}
-
 	public static String connectToDevice(final String contextPath, final String login,
 			final String password, final String deviceToConnect) throws Exception {
 		final String connectUrl = "/connect";
@@ -180,25 +161,27 @@ public class Registrator {
 		return in.readLine();
 	}
 
-	public static String getInternetAddress() throws SocketException {
-		for (final Enumeration<NetworkInterface> interfaces = NetworkInterface
-				.getNetworkInterfaces(); interfaces.hasMoreElements();) {
-			final NetworkInterface cur = interfaces.nextElement();
-			if (cur.isLoopback()) {
-				continue;
-			}
-			for (final InterfaceAddress addr : cur.getInterfaceAddresses()) {
-				if (addr == null) {
-					continue;
-				}
-				final InetAddress inet_addr = addr.getAddress();
-				if (!(inet_addr instanceof Inet4Address)) {
-					continue;
-				}
-				return inet_addr.getHostAddress();
-			}
-		}
+  public static String getInternetAddress() throws SocketException {
+    String result = null;
 
-		return null;
+    for (final Enumeration<NetworkInterface> interfaces = NetworkInterface
+        .getNetworkInterfaces(); interfaces.hasMoreElements();) {
+      final NetworkInterface cur = interfaces.nextElement();
+      if (cur.isLoopback()) {
+        continue;
+      }
+      for (final InterfaceAddress addr : cur.getInterfaceAddresses()) {
+        if (addr == null) {
+          continue;
+        }
+        final InetAddress inet_addr = addr.getAddress();
+        if (!(inet_addr instanceof Inet4Address)) {
+          continue;
+        }
+        result = inet_addr.getHostAddress();
+      }
+    }
+
+    return result;
 	}
 }

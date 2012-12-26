@@ -5,6 +5,9 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 import org.json.JSONException;
+import org.json.JSONObject;
+
+import edu.kpi.kote.registration.Registrator;
 
 
 public class ClientSide {
@@ -20,18 +23,16 @@ public class ClientSide {
 
 	public void startTransmission(final String deviceToConnect, final byte[] data) {
 	  try {
-//      final String connectionInfo =
-//          Registrator.connectToDevice(Registrator.CONTEXT_PATH, login, password, deviceToConnect);
+      final String connectionInfo =
+          Registrator.connectToDevice(Registrator.CONTEXT_PATH, login, password, deviceToConnect);
 
       String serverAddress = null;
       String serverPort = null;
 
-//      final JSONObject connectionInfoJSON = new JSONObject(connectionInfo);
-//      serverAddress = (String) connectionInfoJSON.get("address");
-//      serverPort = (String) connectionInfoJSON.get("port");
+      final JSONObject connectionInfoJSON = new JSONObject(connectionInfo);
+      serverAddress = (String) connectionInfoJSON.get("address");
+      serverPort = (String) connectionInfoJSON.get("port");
 
-      serverAddress = "10.42.0.71";
-      serverPort = Integer.toString(22816);
       System.out.println("Connecting to: " + serverAddress + ":" + serverPort);
 
       performFileTransmission(serverAddress, Integer.parseInt(serverPort), data);
@@ -49,8 +50,7 @@ public class ClientSide {
 		final OutputStream outputStream = clientSocket.getOutputStream();
 		final DataOutputStream dos = new DataOutputStream(outputStream);
 
-//		final byte[] encryptedFile = TripleDESEncryptor.encrypt(fileAsByteArray,
-//				key);
+//		final byte[] encryptedFile = TripleDESEncryptor.encrypt(fileAsByteArray, key);
 
     for (int i = 0; i < data.length; i++) {
       dos.writeByte(data[i]);
