@@ -7,6 +7,7 @@ import java.net.Socket;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
 import edu.kpi.kote.registration.Registrator;
 
 
@@ -23,10 +24,10 @@ public class ClientSide {
 
 	public void startTransmission(final String deviceTo, final byte[] data) {
 	  try {
-      final String deviceToConnect = "server";
-
       final String connectionInfo =
-          Registrator.connectToDevice(Registrator.CONTEXT_PATH, login, password, deviceToConnect);
+          Registrator.connectToDevice(Registrator.CONTEXT_PATH, login, password, deviceTo);
+
+      Log.i("KOTE", "ConnectionInfo: " + connectionInfo);
 
       String serverAddress = null;
       String serverPort = null;
@@ -34,8 +35,6 @@ public class ClientSide {
       final JSONObject connectionInfoJSON = new JSONObject(connectionInfo);
       serverAddress = (String) connectionInfoJSON.get("address");
       serverPort = (String) connectionInfoJSON.get("port");
-      System.out.println("Connecting to: " + serverAddress + ":" + serverPort);
-
       performFileTransmission(serverAddress, Integer.parseInt(serverPort), data);
     } catch (final JSONException e) {
       System.err.println("Server received incorrect JSON format.\n" + e.toString());
@@ -46,7 +45,7 @@ public class ClientSide {
 
 	public void performFileTransmission(final String serverAddress, final int serverPort, final byte[] data) throws Exception {
 		final Socket clientSocket = new Socket(serverAddress, serverPort);
-		System.out.println("Client started");
+		Log.i("KOTE", "Client started");
 
 		final OutputStream outputStream = clientSocket.getOutputStream();
 		final DataOutputStream dos = new DataOutputStream(outputStream);
