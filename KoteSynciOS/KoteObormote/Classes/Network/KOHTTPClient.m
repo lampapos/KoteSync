@@ -17,7 +17,6 @@
 #import <arpa/inet.h>
 
 #define BaseURL         @"http://kote-obormote.appspot.com/"
-//#define BaseURL         @"http://10.42.0.1:8081/"
 
 
 @implementation KOHTTPClient

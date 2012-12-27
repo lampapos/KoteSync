@@ -225,12 +225,7 @@
 
 
 - (NSDictionary *)parseServerResponse:(id)response {
-   NSData *resp = [NSData dataWithData:response];
-   NSDictionary *data = (NSDictionary *)[resp objectFromJSONData];
-   if (data) {
-      NSLog(@"%@", data);
-   }
-   return data;
+   return (NSDictionary *)[response objectFromJSONData];
 }
 
 
@@ -265,39 +260,19 @@
    NSLog(@"stream %@ event %i", aStream, eventCode);
    NSMutableData *data = [NSMutableData data];
    
-   
-   if ([aStream isKindOfClass:[NSOutputStream class]]) {
-      switch(eventCode) {
-         case NSStreamEventHasSpaceAvailable: {
-            uint8_t *readBytes = (uint8_t *)[self.writeStreamData mutableBytes];
-            readBytes += _byteIndex;
-            int data_len = [self.writeStreamData length];
-            unsigned int len = ((data_len - _byteIndex >= 1024) ?
-                                1024 : (data_len - _byteIndex));
-            uint8_t buf[len];
-            (void)memcpy(buf, readBytes, len);
-            len = [(NSOutputStream *)aStream write:(const uint8_t *)buf maxLength:len];
-            _byteIndex += len;
-            break;
-         }
-      }
-   } else {
-      switch(eventCode) {
-         case NSStreamEventHasBytesAvailable: {
-            uint8_t buf[1024];
-            unsigned int len = 0;
-            len = [(NSInputStream *)aStream read:buf maxLength:1024];
-            if (len) {
-               [data appendBytes:(const void *)buf length:len];
-            } else {
-               NSLog(@"no buffer!");
-            }
-            break;
-         }
-      }
-   }
-   
    switch(eventCode) {
+      case NSStreamEventHasSpaceAvailable: {
+         uint8_t *readBytes = (uint8_t *)[self.writeStreamData mutableBytes];
+         readBytes += _byteIndex;
+         int data_len = [self.writeStreamData length];
+         unsigned int len = ((data_len - _byteIndex >= 1024) ?
+                             1024 : (data_len - _byteIndex));
+         uint8_t buf[len];
+         (void)memcpy(buf, readBytes, len);
+         len = [(NSOutputStream *)aStream write:(const uint8_t *)buf maxLength:len];
+         _byteIndex += len;
+         break;
+      }
       case NSStreamEventEndEncountered: {
          [aStream close];
          [aStream removeFromRunLoop:[NSRunLoop currentRunLoop]
