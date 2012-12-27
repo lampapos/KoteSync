@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73271134164BF5710099B92D /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73271133164BF5710099B92D /* icon@2x.png */; };
+		73271136164BF5B00099B92D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 73271135164BF5B00099B92D /* icon.png */; };
+		73602E051682745700996582 /* NSObject+ClassCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 73602E041682745700996582 /* NSObject+ClassCast.m */; };
+		73602E091682750300996582 /* NSMutableDictionary+NotNilValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 73602E081682750300996582 /* NSMutableDictionary+NotNilValue.m */; };
+		73602E0D168275A700996582 /* KOSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73602E0C168275A700996582 /* KOSessionManager.m */; };
+		73602E2B1682B31B00996582 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73602E2A1682B31B00996582 /* MobileCoreServices.framework */; };
+		73602E321682B4D000996582 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 73602E311682B4D000996582 /* Server.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		73D3A7B6164A958F005C2FD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D3A7B5164A958F005C2FD9 /* UIKit.framework */; };
+		73D3A7B8164A958F005C2FD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D3A7B7164A958F005C2FD9 /* Foundation.framework */; };
+		73D3A7BA164A958F005C2FD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D3A7B9164A958F005C2FD9 /* CoreGraphics.framework */; };
+		73D3A7F4164ADCD1005C2FD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D3A7F3164ADCD1005C2FD9 /* libPods.a */; };
+		73D3A811164ADF07005C2FD9 /* UIView+SFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A7FB164ADF07005C2FD9 /* UIView+SFAdditions.m */; };
+		73D3A812164ADF07005C2FD9 /* KOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A7FD164ADF07005C2FD9 /* KOAppDelegate.m */; };
+		73D3A813164ADF07005C2FD9 /* KOHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A800164ADF07005C2FD9 /* KOHTTPClient.m */; };
+		73D3A814164ADF07005C2FD9 /* KOHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A802164ADF07005C2FD9 /* KOHTTPRequestOperation.m */; };
+		73D3A815164ADF07005C2FD9 /* KOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A805164ADF07005C2FD9 /* KOViewController.m */; };
+		73D3A816164ADF07005C2FD9 /* KoteObormote-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D3A806164ADF07005C2FD9 /* KoteObormote-Info.plist */; };
+		73D3A817164ADF07005C2FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D3A808164ADF07005C2FD9 /* main.m */; };
+		73D3A818164ADF07005C2FD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D3A80B164ADF07005C2FD9 /* Default-568h@2x.png */; };
+		73D3A819164ADF07005C2FD9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D3A80C164ADF07005C2FD9 /* Default.png */; };
+		73D3A81A164ADF07005C2FD9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D3A80D164ADF07005C2FD9 /* Default@2x.png */; };
+		73D3A81B164ADF07005C2FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73D3A80F164ADF07005C2FD9 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73271133164BF5710099B92D /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../../icon@2x.png"; sourceTree = "<group>"; };
+		73271135164BF5B00099B92D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../icon.png; sourceTree = "<group>"; };
+		73602E031682745700996582 /* NSObject+ClassCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ClassCast.h"; sourceTree = "<group>"; };
+		73602E041682745700996582 /* NSObject+ClassCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ClassCast.m"; sourceTree = "<group>"; };
+		73602E071682750300996582 /* NSMutableDictionary+NotNilValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NotNilValue.h"; sourceTree = "<group>"; };
+		73602E081682750300996582 /* NSMutableDictionary+NotNilValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NotNilValue.m"; sourceTree = "<group>"; };
+		73602E0B168275A700996582 /* KOSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOSessionManager.h; sourceTree = "<group>"; };
+		73602E0C168275A700996582 /* KOSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOSessionManager.m; sourceTree = "<group>"; };
+		73602E2A1682B31B00996582 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		73602E301682B4D000996582 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		73602E311682B4D000996582 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		73D3A7B1164A958F005C2FD9 /* KoteObormote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoteObormote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D3A7B5164A958F005C2FD9 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73D3A7B7164A958F005C2FD9 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		73D3A7B9164A958F005C2FD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		73D3A7F3164ADCD1005C2FD9 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		73D3A7FA164ADF07005C2FD9 /* UIView+SFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SFAdditions.h"; sourceTree = "<group>"; };
+		73D3A7FB164ADF07005C2FD9 /* UIView+SFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFAdditions.m"; sourceTree = "<group>"; };
+		73D3A7FC164ADF07005C2FD9 /* KOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOAppDelegate.h; sourceTree = "<group>"; };
+		73D3A7FD164ADF07005C2FD9 /* KOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOAppDelegate.m; sourceTree = "<group>"; };
+		73D3A7FF164ADF07005C2FD9 /* KOHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOHTTPClient.h; sourceTree = "<group>"; };
+		73D3A800164ADF07005C2FD9 /* KOHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOHTTPClient.m; sourceTree = "<group>"; };
+		73D3A801164ADF07005C2FD9 /* KOHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOHTTPRequestOperation.h; sourceTree = "<group>"; };
+		73D3A802164ADF07005C2FD9 /* KOHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOHTTPRequestOperation.m; sourceTree = "<group>"; };
+		73D3A804164ADF07005C2FD9 /* KOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOViewController.h; sourceTree = "<group>"; };
+		73D3A805164ADF07005C2FD9 /* KOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOViewController.m; sourceTree = "<group>"; };
+		73D3A806164ADF07005C2FD9 /* KoteObormote-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KoteObormote-Info.plist"; sourceTree = "<group>"; };
+		73D3A807164ADF07005C2FD9 /* KoteObormote-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoteObormote-Prefix.pch"; sourceTree = "<group>"; };
+		73D3A808164ADF07005C2FD9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73D3A80B164ADF07005C2FD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		73D3A80C164ADF07005C2FD9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		73D3A80D164ADF07005C2FD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		73D3A810164ADF07005C2FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E19EE522616D4A5485ACCD18 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73D3A7AE164A958F005C2FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73602E2B1682B31B00996582 /* MobileCoreServices.framework in Frameworks */,
+				73D3A7F4164ADCD1005C2FD9 /* libPods.a in Frameworks */,
+				73D3A7B6164A958F005C2FD9 /* UIKit.framework in Frameworks */,
+				73D3A7B8164A958F005C2FD9 /* Foundation.framework in Frameworks */,
+				73D3A7BA164A958F005C2FD9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73271129164BF50C0099B92D /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				73271135164BF5B00099B92D /* icon.png */,
+				73271133164BF5710099B92D /* icon@2x.png */,
+			);
+			name = icon;
+			path = KoteObormote/Resources/icon;
+			sourceTree = SOURCE_ROOT;
+		};
+		73602E0A1682759800996582 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				73602E0B168275A700996582 /* KOSessionManager.h */,
+				73602E0C168275A700996582 /* KOSessionManager.m */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		73602E231682B22300996582 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				73602E301682B4D000996582 /* Server.h */,
+				73602E311682B4D000996582 /* Server.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		73D3A7A6164A958F005C2FD9 = {
+			isa = PBXGroup;
+			children = (
+				73D3A7BB164A958F005C2FD9 /* KoteObormote */,
+				73D3A7B4164A958F005C2FD9 /* Frameworks */,
+				73D3A7B2164A958F005C2FD9 /* Products */,
+				E19EE522616D4A5485ACCD18 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		73D3A7B2164A958F005C2FD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A7B1164A958F005C2FD9 /* KoteObormote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73D3A7B4164A958F005C2FD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A7F3164ADCD1005C2FD9 /* libPods.a */,
+				73602E2A1682B31B00996582 /* MobileCoreServices.framework */,
+				73D3A7B5164A958F005C2FD9 /* UIKit.framework */,
+				73D3A7B7164A958F005C2FD9 /* Foundation.framework */,
+				73D3A7B9164A958F005C2FD9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73D3A7BB164A958F005C2FD9 /* KoteObormote */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A7F8164ADF07005C2FD9 /* Classes */,
+				73D3A809164ADF07005C2FD9 /* Resources */,
+				73D3A81C164ADF0F005C2FD9 /* Supporting Files */,
+			);
+			path = KoteObormote;
+			sourceTree = "<group>";
+		};
+		73D3A7F8164ADF07005C2FD9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A7FC164ADF07005C2FD9 /* KOAppDelegate.h */,
+				73D3A7FD164ADF07005C2FD9 /* KOAppDelegate.m */,
+				73D3A7F9164ADF07005C2FD9 /* Categories */,
+				73602E0A1682759800996582 /* Facades */,
+				73D3A7FE164ADF07005C2FD9 /* Network */,
+				73D3A803164ADF07005C2FD9 /* View Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		73D3A7F9164ADF07005C2FD9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				73602E071682750300996582 /* NSMutableDictionary+NotNilValue.h */,
+				73602E081682750300996582 /* NSMutableDictionary+NotNilValue.m */,
+				73602E031682745700996582 /* NSObject+ClassCast.h */,
+				73602E041682745700996582 /* NSObject+ClassCast.m */,
+				73D3A7FA164ADF07005C2FD9 /* UIView+SFAdditions.h */,
+				73D3A7FB164ADF07005C2FD9 /* UIView+SFAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		73D3A7FE164ADF07005C2FD9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				73602E231682B22300996582 /* Server */,
+				73D3A7FF164ADF07005C2FD9 /* KOHTTPClient.h */,
+				73D3A800164ADF07005C2FD9 /* KOHTTPClient.m */,
+				73D3A801164ADF07005C2FD9 /* KOHTTPRequestOperation.h */,
+				73D3A802164ADF07005C2FD9 /* KOHTTPRequestOperation.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		73D3A803164ADF07005C2FD9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A804164ADF07005C2FD9 /* KOViewController.h */,
+				73D3A805164ADF07005C2FD9 /* KOViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		73D3A809164ADF07005C2FD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A80A164ADF07005C2FD9 /* Images */,
+				73D3A80E164ADF07005C2FD9 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73D3A80A164ADF07005C2FD9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				73271129164BF50C0099B92D /* icon */,
+				73D3A80B164ADF07005C2FD9 /* Default-568h@2x.png */,
+				73D3A80C164ADF07005C2FD9 /* Default.png */,
+				73D3A80D164ADF07005C2FD9 /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		73D3A80E164ADF07005C2FD9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A80F164ADF07005C2FD9 /* InfoPlist.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		73D3A81C164ADF0F005C2FD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73D3A806164ADF07005C2FD9 /* KoteObormote-Info.plist */,
+				73D3A807164ADF07005C2FD9 /* KoteObormote-Prefix.pch */,
+				73D3A808164ADF07005C2FD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73D3A7B0164A958F005C2FD9 /* KoteObormote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D3A7D5164A958F005C2FD9 /* Build configuration list for PBXNativeTarget "KoteObormote" */;
+			buildPhases = (
+				73D3A7AD164A958F005C2FD9 /* Sources */,
+				73D3A7AE164A958F005C2FD9 /* Frameworks */,
+				73D3A7AF164A958F005C2FD9 /* Resources */,
+				7ECA5DC5A8164EC9979AD3B7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoteObormote;
+			productName = KoteObormote;
+			productReference = 73D3A7B1164A958F005C2FD9 /* KoteObormote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73D3A7A8164A958F005C2FD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KO;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = kpi;
+			};
+			buildConfigurationList = 73D3A7AB164A958F005C2FD9 /* Build configuration list for PBXProject "KoteObormote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 73D3A7A6164A958F005C2FD9;
+			productRefGroup = 73D3A7B2164A958F005C2FD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73D3A7B0164A958F005C2FD9 /* KoteObormote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73D3A7AF164A958F005C2FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D3A816164ADF07005C2FD9 /* KoteObormote-Info.plist in Resources */,
+				73D3A818164ADF07005C2FD9 /* Default-568h@2x.png in Resources */,
+				73D3A819164ADF07005C2FD9 /* Default.png in Resources */,
+				73D3A81A164ADF07005C2FD9 /* Default@2x.png in Resources */,
+				73D3A81B164ADF07005C2FD9 /* InfoPlist.strings in Resources */,
+				73271134164BF5710099B92D /* icon@2x.png in Resources */,
+				73271136164BF5B00099B92D /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ECA5DC5A8164EC9979AD3B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73D3A7AD164A958F005C2FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D3A811164ADF07005C2FD9 /* UIView+SFAdditions.m in Sources */,
+				73D3A812164ADF07005C2FD9 /* KOAppDelegate.m in Sources */,
+				73D3A813164ADF07005C2FD9 /* KOHTTPClient.m in Sources */,
+				73D3A814164ADF07005C2FD9 /* KOHTTPRequestOperation.m in Sources */,
+				73D3A815164ADF07005C2FD9 /* KOViewController.m in Sources */,
+				73D3A817164ADF07005C2FD9 /* main.m in Sources */,
+				73602E051682745700996582 /* NSObject+ClassCast.m in Sources */,
+				73602E091682750300996582 /* NSMutableDictionary+NotNilValue.m in Sources */,
+				73602E0D168275A700996582 /* KOSessionManager.m in Sources */,
+				73602E321682B4D000996582 /* Server.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		73D3A80F164ADF07005C2FD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73D3A810164ADF07005C2FD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73D3A7D3164A958F005C2FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		73D3A7D4164A958F005C2FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		73D3A7D6164A958F005C2FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19EE522616D4A5485ACCD18 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoteObormote/KoteObormote-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"${PODS_HEADERS_SEARCH_PATHS}",
+				);
+				INFOPLIST_FILE = "KoteObormote/KoteObormote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					SystemConfiguration,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		73D3A7D7164A958F005C2FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19EE522616D4A5485ACCD18 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoteObormote/KoteObormote-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"${PODS_HEADERS_SEARCH_PATHS}",
+				);
+				INFOPLIST_FILE = "KoteObormote/KoteObormote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					SystemConfiguration,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73D3A7AB164A958F005C2FD9 /* Build configuration list for PBXProject "KoteObormote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D3A7D3164A958F005C2FD9 /* Debug */,
+				73D3A7D4164A958F005C2FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D3A7D5164A958F005C2FD9 /* Build configuration list for PBXNativeTarget "KoteObormote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D3A7D6164A958F005C2FD9 /* Debug */,
+				73D3A7D7164A958F005C2FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73D3A7A8164A958F005C2FD9 /* Project object */;
+}
